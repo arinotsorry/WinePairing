@@ -5,9 +5,13 @@
 .idea/*
 .idea/workspace.xml
 main.py
+*.log
 
 # SiteScraper Directory
 # Gecko driver
 *SiteScraper/gecko*
 # raw HTML output
 *SiteScraper/*.html
+# excel files
+*SiteScraper/ExcelFiles/*
+
