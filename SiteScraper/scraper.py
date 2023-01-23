@@ -11,6 +11,7 @@ from selenium.webdriver.common.keys import Keys
 import time
 
 # constants
+base_url = "https://www.flavorfox.app"
 URL = "https://www.flavorfox.app/en/flavors"
 # initializing the web driver, including the path where the driver is (it's in this directory)
 driver = webdriver.Firefox( '.' )
@@ -25,10 +26,10 @@ def find_page( url ):
 
 def main():
     # get base page:
-    base_page_soup = BeautifulSoup(find_page( URL ), "html.parser")
+    base_page_soup = BeautifulSoup( find_page( URL ), "html.parser" )
     
     # get all divs
-    all_links = base_page_soup.find_all("a")
+    all_links = base_page_soup.find_all( "a" )
     
     """
     <div>
@@ -42,13 +43,25 @@ def main():
     
     title = (job_element.find( "h2", class_ = "title" )).text.strip()
     """
+    
     get_link_text = lambda link: link.find( 'div' ).text.strip()
     
-    flavors = [
-        (get_link_text(link_html), link_html["href"]) for link_html in all_links if "kitchen" in link_html["href"]
+    list_of_links = [
+        (get_link_text( link_html ), link_html[ "href" ]) for link_html in all_links if "kitchen" in link_html[ "href" ]
     ]
     
-    print(flavors)
+    sweet = {}
+    savory = {}
+    cocktail = {}
     
-    
+    for link in list_of_links:
+        print( str( link ) )
+        if "cocktail" in link[1]:
+            cocktail.update( { link[0] : link[1] } )
+        elif "sweet" in link[ 1 ]:
+            sweet.update( { link[ 0 ]: link[ 1 ] } )
+        elif "savory" in link[ 1 ]:
+            savory.update( { link[ 0 ]: link[ 1 ] } )
+        
+
 main()
