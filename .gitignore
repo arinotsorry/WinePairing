@@ -1,0 +1,12 @@
+### WinePairing ###
+
+# WinePairing Directory
+".DS_Store"
+".idea/"
+"main.py"
+
+# SiteScraper Directory
+# Gecko driver
+"SiteScraper/gecko*"
+# raw HTML output
+"SiteScraper*.html"
