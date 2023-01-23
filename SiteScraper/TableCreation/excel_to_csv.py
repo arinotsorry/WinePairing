@@ -6,7 +6,7 @@ import openpyxl
 import csv
 
 # open workbook
-wb = openpyxl.load_workbook('./ExcelFiles/flavors.xlsx')
+wb = openpyxl.load_workbook('./ExcelFiles/Flavors.xlsx')
 
 # get worksheets
 sheets = wb.sheetnames
