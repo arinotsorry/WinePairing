@@ -40,6 +40,7 @@ def populate_flavor_ws( flavor_ws, flavors ):
     for food in flavors:
         food_flavors = flavors[ food ]  # get all the flavors associated with that specific food
         flavor_ws[ 'A' + str(counter) ] = food  # assign food name to first column
+        flavor_ws[ 'A' + str( counter ) ].font = Font( bold = True )  # make font bold for readability
         
         # populates Cocktail, Savory, and Sweet for one food row in flavor worksheet
         for flavor in food_flavors:
