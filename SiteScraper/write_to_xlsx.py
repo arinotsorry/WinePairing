@@ -18,7 +18,10 @@ every time I run/debug this file
 
 def initialize_flavor_ws( flavor_ws ):
     flavor_ws.title = 'Flavors'
-    # flavor_ws.sheet_properties.tabColor = '4C00C5' mmm we don't need fun colors rn
+
+    flavor_ws[ 'A1' ] = 'Food'
+    b = flavor_ws[ 'A1' ]
+    b.font = Font( bold = True )
     
     flavor_ws[ 'B1' ] = 'Cocktail'
     b = flavor_ws[ 'B1' ]
