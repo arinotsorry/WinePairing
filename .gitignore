@@ -6,6 +6,7 @@
 .idea/workspace.xml
 main.py
 *.log
+*__pycache__*
 
 # SiteScraper Directory
 # Gecko driver
