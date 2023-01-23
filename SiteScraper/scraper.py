@@ -1,5 +1,5 @@
 '''
-Author: Ari WIsenburn
+Author: Ari Wisenburn
 Date: January 22, 2023
 '''
 
