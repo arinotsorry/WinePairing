@@ -1,0 +1,124 @@
+Rank,Cocktail,Category,Savory,Category,Sweet,Category
+1,Angostura,Alcohol,Cinnamon,Spices,Vanilla,Herbs
+2,Coffee,Beverages,Garlic,Herbs,Cocoa,Other
+3,Kahlua,Alcohol,Hazelnut,Nut,Lemon,Fruits
+4,Salt caramel,Other,Onion,Vegetables,Marzipan,Other
+5,,,Tomato,Vegetables,White chocolate,Other
+6,,,Banana,Fruits,Almond,Nut
+7,,,Cumin,Spices,Hazelnut,Nut
+8,,,Olive oil,Oils,Cinnamon,Spices
+9,,,Pepper,Spices,Milk chocolate,Other
+10,,,Vanilla,Herbs,Raspberry,Berries
+11,,,Almond,Nut,Honey,Sugars
+12,,,Bay leaf,Herbs,Lime,Fruits
+13,,,Bean,Vegetables,Orange,Fruits
+14,,,Cardamom,Spices,Pistachio,Nut
+15,,,Carrot,Other,Banana,Fruits
+16,,,Celery,Vegetables,Blackberry,Berries
+17,,,Cilantro,Herbs,Blackcurrant,Berries
+18,,,Coconut,Nut,Buttermilk,Dairy
+19,,,Condensed milk,Dairy,Cardamom,Spices
+20,,,Creme fraiche,Dairy,Cloves,Spices
+21,,,Marzipan,Other,Coconut,Nut
+22,,,Nougat,Other,Coffee,Beverages
+23,,,Red wine,Alcohol,Condensed milk,Dairy
+24,,,Zucchini,Vegetables,Cream cheese,Cheeses
+25,,,Apple,Fruits,Creme fraiche,Dairy
+26,,,Avocado,Vegetables,Ginger,Herbs
+27,,,Baileys,Alcohol,Licorice,Candy
+28,,,Balsamic vinegar,Vinegars,Marshmallow,Candy
+29,,,Basil,Herbs,Mascarpone,Cheeses
+30,,,Beef,Meats,Nougat,Other
+31,,,Beer,Alcohol,Passionfruit,Fruits
+32,,,Bell pepper,Vegetables,Peanit,Nut
+33,,,Capers,Other,Pecan,Nut
+34,,,Cheddar,Cheeses,Rhubarb,Fruits
+35,,,Chia seed,Seeds,Strawberry,Berries
+36,,,Chicken stock,Other,Walnut,Nut
+37,,,Chili,Herbs,Wood sorrel,Herbs
+38,,,Cocoa,Other,Allspice,Spices
+39,,,Coffee,Beverages,Amaretto,Alcohol
+40,,,Cognac,Alcohol,Anise,Spices
+41,,,Corn,Vegetables,Apple,Fruits
+42,,,Curry,Spices,Apple cider vinegar,Vinegars
+43,,,Dark rum,Alcohol,Apricot,Fruits
+44,,,Date,Fruits,Bacon,Meats
+45,,,Egg plant,Vegetables,Baileys,Alcohol
+46,,,Ginger,Herbs,Balsamic vinegar,Vinegars
+47,,,Honey,Sugars,Basil,Herbs
+48,,,Licorice,Candy,Beetroot,Vegetables
+49,,,Lime,Fruits,Blueberry,Berries
+50,,,Mandarin,Fruits,Brown cheese,Cheeses
+51,,,Mango,Fruits,Carrot,Other
+52,,,Maple syrup,Sugars,Cashew,Nut
+53,,,Milk chocolate,Other,Champagne,Alcohol
+54,,,Mint,Herbs,Cherry,Berries
+55,,,Mustard,Condiments,Chestnut,Nut
+56,,,Oragano,Herbs,Chia seed,Seeds
+57,,,Paprika,Spices,Chili,Herbs
+58,,,Parmesan,Dairy,Chokeberry,Berries
+59,,,Peanut butter,Nut,Cilantro,Herbs
+60,,,Pear,Fruits,Cloudberry,Berries
+61,,,Pecan,Nut,Coconut sugar,Sugars
+62,,,Pineapple,Fruits,Cognac,Alcohol
+63,,,Pistachio,Nut,Cointreau,Liqueurs
+64,,,Pomegranate,Fruits,Corn,Vegetables
+65,,,Prune,Fruits,Cranberry,Berries
+66,,,Raspberry,Berries,Cream,Dairy
+67,,,Red onion,Vegetables,Currant,Berries
+68,,,Rice,Other,Dark rum,Alcohol
+69,,,Smoked paprika,Spices,Date,Fruits
+70,,,Sundried tomato,Vegetables,Elderflower,Herbs
+71,,,Timian,Herbs,Fig,Fruits
+72,,,Turmeric,Spices,Flaxseed,Seeds
+73,,,Walnut,Nut,Goat cheese,Cheeses
+74,,,White chocolate,Other,Gooseberry,Berries
+75,,,Yoghurt,Dairy,Grand Marnier,Alcohol
+76,,,,,Grapefruit,Fruits
+77,,,,,Kahlua,Alcohol
+78,,,,,Kiwi,Berries
+79,,,,,Lavender,Herbs
+80,,,,,Lemon balm,Herbs
+81,,,,,Lemongrass,Herbs
+82,,,,,Lychee,Fruits
+83,,,,,Mango,Fruits
+84,,,,,Maple syrup,Sugars
+85,,,,,Mint,Herbs
+86,,,,,Nutella,Other
+87,,,,,Nutmeg,Spices
+88,,,,,Olive oil,Oils
+89,,,,,Oreo,Candy
+90,,,,,Peanut butter,Nut
+91,,,,,Pear,Fruits
+92,,,,,Pepper,Spices
+93,,,,,Peppermint,Herbs
+94,,,,,Pine needles,Other
+95,,,,,Pine nut,Nut
+96,,,,,Pineapple,Fruits
+97,,,,,Plum,Berries
+98,,,,,Pomegranate,Fruits
+99,,,,,Poppy seed,Seeds
+100,,,,,Portwine,Alcohol
+101,,,,,Prune,Fruits
+102,,,,,Pumpkin,Vegetables
+103,,,,,Pumpkin seed,Seeds
+104,,,,,Raisin,Fruits
+105,,,,,Red wine,Alcohol
+106,,,,,Redcurrant,Berries
+107,,,,,Ricotta,Cheeses
+108,,,,,Rosewater,Other
+109,,,,,Rosemary,Herbs
+110,,,,,Rum,Alcohol
+111,,,,,Saffron,Herbs
+112,,,,,Salt caramel,Other
+113,,,,,Ladyfingers,Other
+114,,,,,Sea buckthorn,Berries
+115,,,,,Soy,Other
+116,,,,,Star anise,Spices
+117,,,,,Tarragon,Herbs
+118,,,,,Turmeric,Spices
+119,,,,,Vodka,Alcohol
+120,,,,,Watermelon,Fruits
+121,,,,,White wine,Alcohol
+122,,,,,Yoghurt,Dairy
+123,,,,,Zucchini,Vegetables

@@ -1,0 +1,37 @@
+Rank,Cocktail,Category,Savory,Category,Sweet,Category
+1,Lime,Fruits,Lemon,Fruits,Vanilla,Herbs
+2,Orange,Fruits,Cinnamon,Spices,Almond,Nut
+3,Angostura,Alcohol,Cloves,Spices,Dark chocolate,Other
+4,Light rum,Alcohol,Vanilla,Herbs,Hazelnut,Nut
+5,Cinnamon,Spices,Allspice,Spices,Marzipan,Other
+6,Pineapple,Fruits,Cardamom,Spices,Orange,Fruits
+7,Cointreau,Liqueurs,Carrot,Other,Coconut,Nut
+8,Ginger beer,Beverages,Condensed milk,Dairy,Coffee,Beverages
+9,Grenadine,Beverages,Dark chocolate,Other,Lemon,Fruits
+10,Lemon,Fruits,Fennel,Vegetables,Apricot,Fruits
+11,Mint,Herbs,Ginger,Herbs,Cinnamon,Spices
+12,Nutmeg,Spices,Kale,Vegetables,Raspberry,Berries
+13,Vanilla,Herbs,Licorice,Candy,Strawberry,Berries
+14,Allspice,Spices,Mustard,Condiments,Apple,Fruits
+15,Amaretto,Alcohol,Nutmeg,Spices,Banana,Fruits
+16,Blueberry,Berries,Onion,Vegetables,Cardamom,Spices
+17,Campari,Alcohol,Orange,Fruits,Chokeberry,Berries
+18,Cloves,Spices,Pepper,Spices,Cloves,Spices
+19,Cognac,Alcohol,Plum,Berries,Cocoa,Other
+20,Ginger,Herbs,Portwine,Alcohol,Cognac,Alcohol
+21,Honey,Sugars,Raisin,Fruits,Cream cheese,Cheeses
+22,Licorice,Candy,Sage,Herbs,Currant,Berries
+23,Maple syrup,Sugars,Schnapps,Alcohol,Date,Fruits
+24,Orange bitter,Alcohol,Spring onion,Vegetables,Fig,Fruits
+25,Orange curaçao,Alcohol,Star anise,Spices,Ginger,Herbs
+26,Orgeat syrup,Other,,,Honey,Sugars
+27,Peppermint,Herbs,,,Marshmallow,Candy
+28,Rye whiskey,Alcohol,,,Mascarpone,Cheeses
+29,Strawberry,Berries,,,Nougat,Other
+30,,,,,Pistachio,Nut
+31,,,,,Plum,Berries
+32,,,,,Portwine,Alcohol
+33,,,,,Raisin,Fruits
+34,,,,,Redcurrant,Berries
+35,,,,,Walnut,Nut
+36,,,,,White chocolate,Other

@@ -1,0 +1,40 @@
+Rank,Cocktail,Category,Savory,Category,Sweet,Category
+1,Lemon,Fruits,Avocado,Vegetables,Vanilla,Herbs
+2,Angostura,Alcohol,Bell pepper,Vegetables,Lemon,Fruits
+3,Orange,Fruits,Blackberry,Berries,Marzipan,Other
+4,Sweet vermouth,Alcohol,Chili,Herbs,White chocolate,Other
+5,Orange bitter,Alcohol,Cilantro,Herbs,Cinnamon,Spices
+6,Gin,Alcohol,Cinnamon,Spices,Dark chocolate,Other
+7,Lime,Fruits,Cloves,Spices,Almond,Nut
+8,Pineapple,Fruits,Courgette,Vegetables,Hazelnut,Nut
+9,Absinthe,Alcohol,Cumin,Spices,Lime,Fruits
+10,Bourbon,Alcohol,Flatleaf Parsley,Herbs,Chestnut,Nut
+11,Vodka,Alcohol,Garam masala,Spices,Pistachio,Nut
+12,Maraschino liqueur,Alcohol,Garlic,Herbs,Cardamom,Spices
+13,Blue curaçao,Alcohol,Ginger,Herbs,Cherry wine,Alcohol
+14,Nutmeg,Spices,Lemon,Fruits,Cloves,Spices
+15,Peychaud's Bitters,Alcohol,Mint,Herbs,Cocoa,Other
+16,Rye whiskey,Alcohol,Olive oil,Oils,Ginger,Herbs
+17,Tequila,Alcohol,Orange,Fruits,Milk chocolate,Other
+18,Agave nectar,Sugars,Smoked paprika,Spices,Orange,Fruits
+19,Aperol,Alcohol,Spinach,Spices,Apricot,Fruits
+20,Basil,Herbs,Turmeric,Spices,Beetroot,Vegetables
+21,Bénédictine,Alcohol,Vanilla,Herbs,Blackberry,Berries
+22,Calvados,Alcohol,,,Blackcurrant,Berries
+23,Cointreau,Liqueurs,,,Buttermilk,Dairy
+24,Cranberry,Berries,,,Champagne,Alcohol
+25,Fernet Branca,Alcohol,,,Cream cheese,Cheeses
+26,Grand Marnier,Alcohol,,,Creme fraiche,Dairy
+27,Green chartreuse,Alcohol,,,Elderflower,Herbs
+28,Grenadine,Beverages,,,Fig,Fruits
+29,Light rum,Alcohol,,,Honey,Sugars
+30,Maple syrup,Sugars,,,Licorice,Candy
+31,Mint,Herbs,,,Maple syrup,Sugars
+32,Red wine,Alcohol,,,Mascarpone,Cheeses
+33,Rum,Alcohol,,,Pecan,Nut
+34,Scotch,Alcohol,,,Portwine,Alcohol
+35,,,,,Raisin,Fruits
+36,,,,,Rhubarb,Fruits
+37,,,,,Rum,Alcohol
+38,,,,,Strawberry,Berries
+39,,,,,Yoghurt,Dairy

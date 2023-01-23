@@ -1,0 +1,34 @@
+Rank,Cocktail,Category,Savory,Category,Sweet,Category
+1,Lime,Fruits,Lemon,Fruits,Dark chocolate,Other
+2,Lemon,Fruits,Pepper,Spices,Lemon,Fruits
+3,Orange,Fruits,Onion,Vegetables,Elderflower,Herbs
+4,Angostura,Alcohol,,,Vanilla,Herbs
+5,Cointreau,Liqueurs,,,Marzipan,Other
+6,Maraschino liqueur,Alcohol,,,White chocolate,Other
+7,Mint,Herbs,,,Lime,Fruits
+8,St. Germain,Alcohol,,,Almond,Nut
+9,Agave nectar,Sugars,,,Cocoa,Other
+10,Calvados,Alcohol,,,Hazelnut,Nut
+11,Gin,Alcohol,,,Marshmallow,Candy
+12,Grand Marnier,Alcohol,,,Orange,Fruits
+13,Honey,Sugars,,,Passionfruit,Fruits
+14,Orange bitter,Alcohol,,,Raspberry,Berries
+15,Orgeat syrup,Other,,,Amaretto,Alcohol
+16,Parsley,Herbs,,,Apple,Fruits
+17,Pineapple,Fruits,,,Blackcurrant,Berries
+18,Star anise,Spices,,,Blueberry,Berries
+19,Strawberry,Berries,,,Buttermilk,Dairy
+20,,,,,Cherry,Berries
+21,,,,,Coffee,Beverages
+22,,,,,Cognac,Alcohol
+23,,,,,Creme fraiche,Dairy
+24,,,,,Gooseberry,Berries
+25,,,,,Honey,Sugars
+26,,,,,Milk chocolate,Other
+27,,,,,Peanit,Nut
+28,,,,,Pear,Fruits
+29,,,,,Pistachio,Nut
+30,,,,,Redcurrant,Berries
+31,,,,,Rosemary,Herbs
+32,,,,,Strawberry,Berries
+33,,,,,Walnut,Nut

@@ -1,0 +1,21 @@
+Rank,Cocktail,Category,Savory,Category,Sweet,Category
+1,Lemon,Fruits,Garlic,Herbs,Cinnamon,Spices
+2,Cinnamon,Spices,Carrot,Other,Vanilla,Herbs
+3,Honey,Sugars,Cumin,Spices,Apple,Fruits
+4,Orange,Fruits,Honey,Sugars,Bourbon,Alcohol
+5,Apple,Fruits,Lemon,Fruits,Cream,Dairy
+6,Cloves,Spices,Lime,Fruits,,
+7,Angostura,Alcohol,Olive oil,Oils,,
+8,Beer,Alcohol,Onion,Vegetables,,
+9,Bourbon,Alcohol,Orange,Fruits,,
+10,Calvados,Alcohol,Oragano,Herbs,,
+11,Cranberry,Berries,Pepper,Spices,,
+12,Maple syrup,Sugars,Rosemary,Herbs,,
+13,Mezcal,Alcohol,Shallot,Vegetables,,
+14,Nutmeg,Spices,Apple,Fruits,,
+15,Tequila,Alcohol,Cayenne pepper,Spices,,
+16,,,Chicken stock,Other,,
+17,,,Cream,Dairy,,
+18,,,Mustard,Condiments,,
+19,,,Tomato,Vegetables,,
+20,,,Worcestershire sauce,Condiments,,

@@ -1,0 +1,80 @@
+Rank,Cocktail,Category,Savory,Category,Sweet,Category
+1,Lemon,Fruits,Pepper,Spices,Vanilla,Herbs
+2,Mint,Herbs,Banana,Fruits,Lemon,Fruits
+3,Orange,Fruits,Honey,Sugars,Almond,Nut
+4,Beer,Alcohol,Olive oil,Oils,White chocolate,Other
+5,Lime,Fruits,Arugula,Vegetables,Marzipan,Other
+6,Angostura,Alcohol,Buttermilk,Dairy,Dark chocolate,Other
+7,Blueberry,Berries,Feta,Cheeses,Mint,Herbs
+8,Elderflower,Herbs,Goat cheese,Cheeses,Raspberry,Berries
+9,Honey,Sugars,Lemon,Fruits,Rhubarb,Fruits
+10,Pineapple,Fruits,Mint,Herbs,Blueberry,Berries
+11,Amaretto,Alcohol,Mozzarella,Cheeses,Creme fraiche,Dairy
+12,Banana,Fruits,Red onion,Vegetables,Elderflower,Herbs
+13,Bourbon,Alcohol,Spinach,Spices,Hazelnut,Nut
+14,Champagne,Alcohol,Vanilla,Herbs,Lime,Fruits
+15,Dark rum,Alcohol,Yoghurt,Dairy,Marshmallow,Candy
+16,Gin,Alcohol,Apple,Fruits,Pistachio,Nut
+17,Ginger beer,Beverages,Avocado,Vegetables,Amaretto,Alcohol
+18,Grand Marnier,Alcohol,Blueberry,Berries,Apple,Fruits
+19,Light rum,Alcohol,Capers,Other,Apricot,Fruits
+20,Orange bitter,Alcohol,Chili,Herbs,Banana,Fruits
+21,Red wine,Alcohol,Jamón,Meats,Basil,Herbs
+22,Rhubarb,Fruits,Mustard,Condiments,Blackberry,Berries
+23,Rum,Alcohol,Pecan,Nut,Blackcurrant,Berries
+24,Vanilla,Herbs,Pine nut,Nut,Buttermilk,Dairy
+25,Vodka,Alcohol,Rye bread,Other,Cardamom,Spices
+26,White rum,Alcohol,Spring onion,Vegetables,Cinnamon,Spices
+27,,,Timian,Herbs,Cocoa,Other
+28,,,Tomato,Vegetables,Coconut,Nut
+29,,,White wine vinegar,Vinegars,Cream cheese,Cheeses
+30,,,,,Honey,Sugars
+31,,,,,Lemon balm,Herbs
+32,,,,,Licorice,Candy
+33,,,,,Mascarpone,Cheeses
+34,,,,,Milk chocolate,Other
+35,,,,,Orange,Fruits
+36,,,,,Pepper,Spices
+37,,,,,Pineapple,Fruits
+38,,,,,Redcurrant,Berries
+39,,,,,Rum,Alcohol
+40,,,,,Yoghurt,Dairy
+41,,,,,Apple cider vinegar,Vinegars
+42,,,,,Avocado,Vegetables
+43,,,,,Bay leaf,Herbs
+44,,,,,Brown cheese,Cheeses
+45,,,,,Cashew,Nut
+46,,,,,Champagne,Alcohol
+47,,,,,Cherry,Berries
+48,,,,,Cherry wine,Alcohol
+49,,,,,Chestnut,Nut
+50,,,,,Cloudberry,Berries
+51,,,,,Coffee,Beverages
+52,,,,,Condensed milk,Dairy
+53,,,,,Cranberry,Berries
+54,,,,,Cream,Dairy
+55,,,,,Dark rum,Alcohol
+56,,,,,Ginger,Herbs
+57,,,,,Gooseberry,Berries
+58,,,,,Grand Marnier,Alcohol
+59,,,,,Grapefruit,Fruits
+60,,,,,Kiwi,Berries
+61,,,,,Mango,Fruits
+62,,,,,Nougat,Other
+63,,,,,Nutella,Other
+64,,,,,Passionfruit,Fruits
+65,,,,,Peach,Fruits
+66,,,,,Peanut butter,Nut
+67,,,,,Pear,Fruits
+68,,,,,Pine nut,Nut
+69,,,,,Plum,Berries
+70,,,,,Poppy seed,Seeds
+71,,,,,Portwine,Alcohol
+72,,,,,Red cabbage,Vegetables
+73,,,,,Rosewater,Other
+74,,,,,Sesame seed,Seeds
+75,,,,,Timian,Herbs
+76,,,,,Walnut,Nut
+77,,,,,Watermelon,Fruits
+78,,,,,White wine vinegar,Vinegars
+79,,,,,Wood sorrel,Herbs

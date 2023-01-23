@@ -1,0 +1,130 @@
+Rank,Cocktail,Category,Savory,Category,Sweet,Category
+1,Mint,Herbs,Garlic,Herbs,Vanilla,Herbs
+2,Angostura,Alcohol,Cilantro,Herbs,White chocolate,Other
+3,Pineapple,Fruits,Chili,Herbs,Lemon,Fruits
+4,Cointreau,Liqueurs,Olive oil,Oils,Dark chocolate,Other
+5,Orange,Fruits,Ginger,Herbs,Almond,Nut
+6,Grapefruit,Fruits,Onion,Vegetables,Marzipan,Other
+7,Lemon,Fruits,Pepper,Spices,Cocoa,Other
+8,Light rum,Alcohol,Avocado,Vegetables,Hazelnut,Nut
+9,Tequila,Alcohol,Cumin,Spices,Blueberry,Berries
+10,Vodka,Alcohol,Tomato,Vegetables,Cinnamon,Spices
+11,Agave nectar,Sugars,Carrot,Other,Coconut,Nut
+12,Gin,Alcohol,Chicken,Meats,Creme fraiche,Dairy
+13,Beer,Alcohol,Coconut,Nut,Elderflower,Herbs
+14,Ginger beer,Beverages,Cucumber,Vegetables,Marshmallow,Candy
+15,Honey,Sugars,Fish sauce,Other,Passionfruit,Fruits
+16,Maraschino liqueur,Alcohol,Mint,Herbs,Raspberry,Berries
+17,Nutmeg,Spices,Red onion,Vegetables,Strawberry,Berries
+18,Orgeat syrup,Other,Soy,Other,Yoghurt,Dairy
+19,Bourbon,Alcohol,Spring onion,Vegetables,Apple,Fruits
+20,Campari,Alcohol,Bean sprout,Vegetables,Apricot,Fruits
+21,Celery,Vegetables,Bell pepper,Vegetables,Avocado,Vegetables
+22,Champagne,Alcohol,Brocolli,Vegetables,Basil,Herbs
+23,Cherry,Berries,Cayenne pepper,Spices,Blackberry,Berries
+24,Cinnamon,Spices,Cheddar,Cheeses,Buttermilk,Dairy
+25,Cranberry,Berries,Cinnamon,Spices,Cardamom,Spices
+26,Cucumber,Vegetables,Cloves,Spices,Champagne,Alcohol
+27,Dark rum,Alcohol,Coconut sugar,Sugars,Cherry,Berries
+28,Ginger,Herbs,Creme fraiche,Dairy,Chili,Herbs
+29,Ginger ale,Beverages,Garam masala,Spices,Cloves,Spices
+30,Grand Marnier,Alcohol,Honey,Sugars,Condensed milk,Dairy
+31,Green chartreuse,Alcohol,Lemon,Fruits,Cream cheese,Cheeses
+32,Grenadine,Beverages,Lemongrass,Herbs,Ginger,Herbs
+33,Orange curaçao,Alcohol,Noodle,Other,Honey,Sugars
+34,Pepper,Spices,Paprika,Spices,Licorice,Candy
+35,Peychaud's Bitters,Alcohol,Peanit,Nut,Mango,Fruits
+36,Pisco,Alcohol,Pointed cabbage,Vegetables,Mascarpone,Cheeses
+37,Rosemary,Herbs,Potato,Vegetables,Milk chocolate,Other
+38,Smoked paprika,Spices,Rice,Other,Mint,Herbs
+39,St. Germain,Alcohol,Sesame seed,Seeds,Orange,Fruits
+40,Tabasco,Condiments,Smoked paprika,Spices,Pecan,Nut
+41,Tomato,Vegetables,Turmeric,Spices,Pistachio,Nut
+42,Worcestershire sauce,Condiments,Yoghurt,Dairy,Rhubarb,Fruits
+43,Absinthe,Alcohol,Zucchini,Vegetables,Rum,Alcohol
+44,Allspice,Spices,Allspice,Spices,Walnut,Nut
+45,Amaretto,Alcohol,Almond,Nut,Wood sorrel,Herbs
+46,Aperol,Alcohol,Apple,Fruits,Allspice,Spices
+47,Apple,Fruits,Apple cider,Alcohol,Baileys,Alcohol
+48,Averna Amaro,Alcohol,Apple cider vinegar,Vinegars,Banana,Fruits
+49,Balsamic vinegar,Vinegars,Arugula,Vegetables,Beetroot,Vegetables
+50,Basil,Herbs,Asparagus,Vegetables,Blackcurrant,Berries
+51,Bénédictine,Alcohol,Bacon,Meats,Cashew,Nut
+52,Blackberry,Berries,Balsamic vinegar,Vinegars,Chia seed,Seeds
+53,Blue curaçao,Alcohol,Banana,Fruits,Chokeberry,Berries
+54,Blueberry,Berries,Basil,Herbs,Cilantro,Herbs
+55,Bourbon whisky,Alcohol,Bay leaf,Herbs,Cointreau,Liqueurs
+56,Calvados,Alcohol,Bean,Vegetables,Corn,Vegetables
+57,Carrot,Other,Beef,Meats,Curry,Spices
+58,Cayenne pepper,Spices,Bread,Other,Date,Fruits
+59,Coconut,Nut,Buttermilk,Dairy,Fish sauce,Other
+60,Cognac,Alcohol,Capers,Other,Garlic,Herbs
+61,Cream,Dairy,Cardamom,Spices,Goat cheese,Cheeses
+62,Cumin,Spices,Cashew,Nut,Gooseberry,Berries
+63,Dry vermouth,Alcohol,Cauliflower,Vegetables,Grand Marnier,Alcohol
+64,Lemongrass,Herbs,Celery,Vegetables,Grapefruit,Fruits
+65,Mango,Fruits,Chicken stock,Other,Lemon balm,Herbs
+66,Maple syrup,Sugars,Chick pea,Vegetables,Lemongrass,Herbs
+67,Matcha tea,Beverages,Chive,Herbs,Matcha tea,Beverages
+68,Mezcal,Alcohol,Chorizo,Meats,Mayonnaise,Condiments
+69,Orange bitter,Alcohol,Cocoa,Other,Nougat,Other
+70,Parsley,Herbs,Cointreau,Liqueurs,Nutella,Other
+71,Passionfruit,Fruits,Coriander seed,Other,Peanit,Nut
+72,Pear,Fruits,Corn,Vegetables,Peanut butter,Nut
+73,Pomegranate,Fruits,Couscous,Other,Pear,Fruits
+74,Raspberry,Berries,Cranberry,Berries,Pepper,Spices
+75,Red wine,Alcohol,Cream,Dairy,Pine needles,Other
+76,Rhubarb,Fruits,Cream cheese,Cheeses,Pineapple,Fruits
+77,Rum,Alcohol,Curry,Spices,Plum,Berries
+78,Rye whiskey,Alcohol,Dark chocolate,Other,Pomegranate,Fruits
+79,Sage,Herbs,Dill,Herbs,Portwine,Alcohol
+80,Schnapps,Alcohol,Edamame,Vegetables,Raisin,Fruits
+81,Star anise,Spices,Egg plant,Vegetables,Red onion,Vegetables
+82,Strawberry,Berries,Fennel,Vegetables,Redcurrant,Berries
+83,Tonic,Beverages,Feta,Cheeses,Rosemary,Herbs
+84,Vanilla,Herbs,Grapefruit,Fruits,Saffron,Herbs
+85,Watermelon,Fruits,Ketchup,Condiments,Sesame seed,Seeds
+86,White rum,Alcohol,Leek,Vegetables,Shallot,Vegetables
+87,White wine,Alcohol,Mango,Fruits,Smoked paprika,Spices
+88,,,Maple syrup,Sugars,Soy,Other
+89,,,Mayonnaise,Condiments,Star anise,Spices
+90,,,Mushroom,Vegetables,Tarragon,Herbs
+91,,,Mustard,Condiments,Tequila,Alcohol
+92,,,Orange,Fruits,Toasted coconut,Nut
+93,,,Oragano,Herbs,Turmeric,Spices
+94,,,Parmesan,Dairy,Vodka,Alcohol
+95,,,Parsley,Herbs,White rum,Alcohol
+96,,,Passionfruit,Fruits,,
+97,,,Pea,Vegetables,,
+98,,,Peanut butter,Nut,,
+99,,,Pecan,Nut,,
+100,,,Pickling vinegar,Vinegars,,
+101,,,Pine nut,Nut,,
+102,,,Pineapple,Fruits,,
+103,,,Pistachio,Nut,,
+104,,,Plum,Berries,,
+105,,,Pork,Meats,,
+106,,,Pumpkin seed,Seeds,,
+107,,,Raisin,Fruits,,
+108,,,Red cabbage,Vegetables,,
+109,,,Rosemary,Herbs,,
+110,,,Rum,Alcohol,,
+111,,,Salad,Other,,
+112,,,Salmon,Meats,,
+113,,,Sesame oil,Oils,,
+114,,,Shallot,Vegetables,,
+115,,,Spinach,Spices,,
+116,,,Star anise,Spices,,
+117,,,Sundried tomato,Vegetables,,
+118,,,Sweet potato,Vegetables,,
+119,,,Tabasco,Condiments,,
+120,,,Tahin,Other,,
+121,,,Tarragon,Herbs,,
+122,,,Tequila,Alcohol,,
+123,,,Timian,Herbs,,
+124,,,Vanilla,Herbs,,
+125,,,Vegetable stock,Other,,
+126,,,Vodka,Alcohol,,
+127,,,Watercress,Vegetables,,
+128,,,Watermelon,Fruits,,
+129,,,Worcestershire sauce,Condiments,,

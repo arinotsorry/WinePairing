@@ -1,0 +1,130 @@
+Rank,Savory,Category,Sweet,Category
+1,Pepper,Spices,Vanilla,Herbs
+2,Olive oil,Oils,Lemon,Fruits
+3,Garlic,Herbs,Almond,Nut
+4,Lemon,Fruits,Marzipan,Other
+5,Onion,Vegetables,White chocolate,Other
+6,Mayonnaise,Condiments,Dark chocolate,Other
+7,Mustard,Condiments,Lime,Fruits
+8,Dill,Herbs,Cocoa,Other
+9,Red onion,Vegetables,Cream cheese,Cheeses
+10,Avocado,Vegetables,Hazelnut,Nut
+11,Carrot,Other,Blueberry,Berries
+12,Chili,Herbs,Cinnamon,Spices
+13,Chive,Herbs,Marshmallow,Candy
+14,Cilantro,Herbs,Mascarpone,Cheeses
+15,Cumin,Spices,Raspberry,Berries
+16,Parsley,Herbs,Rhubarb,Fruits
+17,Potato,Vegetables,Strawberry,Berries
+18,Tomato,Vegetables,Yoghurt,Dairy
+19,Apple,Fruits,Apple,Fruits
+20,Apple cider vinegar,Vinegars,Apricot,Fruits
+21,Bacon,Meats,Blackberry,Berries
+22,Bean,Vegetables,Buttermilk,Dairy
+23,Bell pepper,Vegetables,Cardamom,Spices
+24,Capers,Other,Coconut,Nut
+25,Cayenne pepper,Spices,Coffee,Beverages
+26,Celery,Vegetables,Condensed milk,Dairy
+27,Cheddar,Cheeses,Cream,Dairy
+28,Chicken,Meats,Elderflower,Herbs
+29,Chicken stock,Other,Ginger,Herbs
+30,Cucumber,Vegetables,Honey,Sugars
+31,Curry,Spices,Milk chocolate,Other
+32,Flatleaf Parsley,Herbs,Mint,Herbs
+33,Ginger,Herbs,Nutmeg,Spices
+34,Honey,Sugars,Olive oil,Oils
+35,Lime,Fruits,Orange,Fruits
+36,Nutmeg,Spices,Passionfruit,Fruits
+37,Paprika,Spices,Pepper,Spices
+38,Parmesan,Dairy,Redcurrant,Berries
+39,Pea,Vegetables,Walnut,Nut
+40,Pointed cabbage,Vegetables,Amaretto,Alcohol
+41,Rosemary,Herbs,Avocado,Vegetables
+42,Smoked paprika,Spices,Banana,Fruits
+43,Spinach,Spices,Basil,Herbs
+44,Spring onion,Vegetables,Blackcurrant,Berries
+45,Timian,Herbs,Caramel,Sugars
+46,Turmeric,Spices,Champagne,Alcohol
+47,White wine,Alcohol,Cheddar,Cheeses
+48,White wine vinegar,Vinegars,Cherry,Berries
+49,Allspice,Spices,Chili,Herbs
+50,Almond,Nut,Cloves,Spices
+51,Arugula,Vegetables,Coconut sugar,Sugars
+52,Asparagus,Vegetables,Cumin,Spices
+53,Balsamic vinegar,Vinegars,Dill,Herbs
+54,Basil,Herbs,Flaxseed,Seeds
+55,Bay leaf,Herbs,Gooseberry,Berries
+56,Beef,Meats,Grand Marnier,Alcohol
+57,Beer,Alcohol,Grapefruit,Fruits
+58,Beetroot,Vegetables,Lemon balm,Herbs
+59,Blueberry,Berries,Licorice,Candy
+60,Brandy,Alcohol,Mayonnaise,Condiments
+61,Bread,Other,Mustard,Condiments
+62,Brocolli,Vegetables,Nougat,Other
+63,Buttermilk,Dairy,Nutella,Other
+64,Butternut squash,Vegetables,Paprika,Spices
+65,Cardamom,Spices,Parmesan,Dairy
+66,Cashew,Nut,Parsley,Herbs
+67,Cauliflower,Vegetables,Peanit,Nut
+68,Celeriac,Vegetables,Pecan,Nut
+69,Chick pea,Vegetables,Pineapple,Fruits
+70,Cinnamon,Spices,Pistachio,Nut
+71,Cloves,Spices,Poppy seed,Seeds
+72,Coconut,Nut,Portwine,Alcohol
+73,Cognac,Alcohol,Rosewater,Other
+74,Corn,Vegetables,Rum,Alcohol
+75,Courgette,Vegetables,Sea buckthorn,Berries
+76,Cranberry,Berries,Sesame seed,Seeds
+77,Cream,Dairy,Shallot,Vegetables
+78,Cream cheese,Cheeses,Soy,Other
+79,Dark chocolate,Other,Sweet potato,Vegetables
+80,Edamame,Vegetables,Toasted coconut,Nut
+81,Egg plant,Vegetables,Vodka,Alcohol
+82,Fennel,Vegetables,Wood sorrel,Herbs
+83,Fennel seed,Spices,,
+84,Feta,Cheeses,,
+85,Fish sauce,Other,,
+86,Flaxseed,Seeds,,
+87,Garam masala,Spices,,
+88,Gin,Alcohol,,
+89,Goat cheese,Cheeses,,
+90,Hazelnut,Nut,,
+91,Jamón,Meats,,
+92,Kale,Vegetables,,
+93,Ketchup,Condiments,,
+94,Leek,Vegetables,,
+95,Mango,Fruits,,
+96,Mint,Herbs,,
+97,Mozzarella,Cheeses,,
+98,Mushroom,Vegetables,,
+99,Noodle,Other,,
+100,Orange,Fruits,,
+101,Oragano,Herbs,,
+102,Parsley root,Vegetables,,
+103,Pasta,Other,,
+104,Peanit,Nut,,
+105,Pine nut,Nut,,
+106,Pork,Meats,,
+107,Pumpkin,Vegetables,,
+108,Pumpkin seed,Seeds,,
+109,Red wine,Alcohol,,
+110,Rice,Other,,
+111,Ricotta,Cheeses,,
+112,Rye bread,Other,,
+113,Salad,Other,,
+114,Salmon,Meats,,
+115,Sesame seed,Seeds,,
+116,Shallot,Vegetables,,
+117,Smoked salmon,Meats,,
+118,Sourdough,Other,,
+119,Sundried tomato,Vegetables,,
+120,Sweet potato,Vegetables,,
+121,Tahin,Other,,
+122,Tarragon,Herbs,,
+123,Tequila,Alcohol,,
+124,Vegetable stock,Other,,
+125,Walnut,Nut,,
+126,Watercress,Vegetables,,
+127,Worcestershire sauce,Condiments,,
+128,Yoghurt,Dairy,,
+129,Zucchini,Vegetables,,

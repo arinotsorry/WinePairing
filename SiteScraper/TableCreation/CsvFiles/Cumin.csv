@@ -1,0 +1,133 @@
+Rank,Cocktail,Category,Savory,Category,Sweet,Category
+1,Lime,Fruits,Garlic,Herbs,Olive oil,Oils
+2,Cointreau,Liqueurs,Olive oil,Oils,Onion,Vegetables
+3,Ginger beer,Beverages,Cilantro,Herbs,Garlic,Herbs
+4,Mint,Herbs,Onion,Vegetables,Lemon,Fruits
+5,,,Pepper,Spices,Chili,Herbs
+6,,,Chili,Herbs,Cilantro,Herbs
+7,,,Tomato,Vegetables,Cinnamon,Spices
+8,,,Red onion,Vegetables,Tomato,Vegetables
+9,,,Cinnamon,Spices,Carrot,Other
+10,,,Ginger,Herbs,Paprika,Spices
+11,,,Lemon,Fruits,Avocado,Vegetables
+12,,,Lime,Fruits,Cayenne pepper,Spices
+13,,,Paprika,Spices,Cheddar,Cheeses
+14,,,Smoked paprika,Spices,Chicken stock,Other
+15,,,Turmeric,Spices,Chick pea,Vegetables
+16,,,Avocado,Vegetables,Coriander seed,Other
+17,,,Bay leaf,Herbs,Courgette,Vegetables
+18,,,Bean,Vegetables,Couscous,Other
+19,,,Bell pepper,Vegetables,Cream,Dairy
+20,,,Cardamom,Spices,Creme fraiche,Dairy
+21,,,Carrot,Other,Fennel seed,Spices
+22,,,Cayenne pepper,Spices,Garam masala,Spices
+23,,,Cheddar,Cheeses,Ginger,Herbs
+24,,,Chicken,Meats,Honey,Sugars
+25,,,Chicken stock,Other,Mayonnaise,Condiments
+26,,,Chick pea,Vegetables,Mustard,Condiments
+27,,,Cloves,Spices,Nutmeg,Spices
+28,,,Coconut,Nut,Oragano,Herbs
+29,,,Coriander seed,Other,Pepper,Spices
+30,,,Cream,Dairy,Red wine,Alcohol
+31,,,Creme fraiche,Dairy,Shallot,Vegetables
+32,,,Cucumber,Vegetables,Spring onion,Vegetables
+33,,,Curry,Spices,Sweet potato,Vegetables
+34,,,Garam masala,Spices,Turmeric,Spices
+35,,,Honey,Sugars,Yoghurt,Dairy
+36,,,Mint,Herbs,,
+37,,,Oragano,Herbs,,
+38,,,Parsley,Herbs,,
+39,,,Potato,Vegetables,,
+40,,,Rice,Other,,
+41,,,Sesame seed,Seeds,,
+42,,,Spring onion,Vegetables,,
+43,,,Tahin,Other,,
+44,,,Yoghurt,Dairy,,
+45,,,Zucchini,Vegetables,,
+46,,,Allspice,Spices,,
+47,,,Almond,Nut,,
+48,,,Apple,Fruits,,
+49,,,Apple cider,Alcohol,,
+50,,,Apple cider vinegar,Vinegars,,
+51,,,Apricot,Fruits,,
+52,,,Arugula,Vegetables,,
+53,,,Bacon,Meats,,
+54,,,Balsamic vinegar,Vinegars,,
+55,,,Banana,Fruits,,
+56,,,Basil,Herbs,,
+57,,,Beef,Meats,,
+58,,,Beef stock,Other,,
+59,,,Beer,Alcohol,,
+60,,,Beetroot,Vegetables,,
+61,,,Bread,Other,,
+62,,,Brocolli,Vegetables,,
+63,,,Buttermilk,Dairy,,
+64,,,Butternut squash,Vegetables,,
+65,,,Capers,Other,,
+66,,,Caraway,Spices,,
+67,,,Cashew,Nut,,
+68,,,Cauliflower,Vegetables,,
+69,,,Celeriac,Vegetables,,
+70,,,Celery,Vegetables,,
+71,,,Cherry,Berries,,
+72,,,Chive,Herbs,,
+73,,,Chorizo,Meats,,
+74,,,Coconut sugar,Sugars,,
+75,,,Coffee,Beverages,,
+76,,,Corn,Vegetables,,
+77,,,Courgette,Vegetables,,
+78,,,Couscous,Other,,
+79,,,Cream cheese,Cheeses,,
+80,,,Dark chocolate,Other,,
+81,,,Date,Fruits,,
+82,,,Dill,Herbs,,
+83,,,Egg plant,Vegetables,,
+84,,,Fennel seed,Spices,,
+85,,,Feta,Cheeses,,
+86,,,Fish sauce,Other,,
+87,,,Flatleaf Parsley,Herbs,,
+88,,,Hazelnut,Nut,,
+89,,,Kale,Vegetables,,
+90,,,Ketchup,Condiments,,
+91,,,Leek,Vegetables,,
+92,,,Lemongrass,Herbs,,
+93,,,Mango,Fruits,,
+94,,,Maple syrup,Sugars,,
+95,,,Mayonnaise,Condiments,,
+96,,,Mozzarella,Cheeses,,
+97,,,Mushroom,Vegetables,,
+98,,,Mustard,Condiments,,
+99,,,Nutmeg,Spices,,
+100,,,Orange,Fruits,,
+101,,,Parmesan,Dairy,,
+102,,,Pea,Vegetables,,
+103,,,Peanit,Nut,,
+104,,,Pickling vinegar,Vinegars,,
+105,,,Pine nut,Nut,,
+106,,,Pistachio,Nut,,
+107,,,Pointed cabbage,Vegetables,,
+108,,,Pomegranate,Fruits,,
+109,,,Pork,Meats,,
+110,,,Pumpkin,Vegetables,,
+111,,,Pumpkin seed,Seeds,,
+112,,,Raisin,Fruits,,
+113,,,Rapeseed oil,Oils,,
+114,,,Red cabbage,Vegetables,,
+115,,,Red wine,Alcohol,,
+116,,,Rosemary,Herbs,,
+117,,,Saffron,Herbs,,
+118,,,Salad,Other,,
+119,,,Shallot,Vegetables,,
+120,,,Soy,Other,,
+121,,,Spinach,Spices,,
+122,,,Star anise,Spices,,
+123,,,Sundried tomato,Vegetables,,
+124,,,Sweet potato,Vegetables,,
+125,,,Timian,Herbs,,
+126,,,Vanilla,Herbs,,
+127,,,Vegetable stock,Other,,
+128,,,Walnut,Nut,,
+129,,,Watercress,Vegetables,,
+130,,,White wine,Alcohol,,
+131,,,White wine vinegar,Vinegars,,
+132,,,Worcestershire sauce,Condiments,,
