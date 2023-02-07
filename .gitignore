@@ -22,3 +22,4 @@ main.py
 Database/flavors_database.txt
 *.txt
 *.html
+SiteScraper/TableCreation/CsvFiles
