@@ -93,7 +93,7 @@ def populate_food_ws( wb, food, food_flavors ):
             # increment column by 2 for food category
             col = chr( ord( col ) + 2 )  # TODO: do I really need to do all this casting?
         
-    wb.save( './TableCreation/ExcelFiles/Flavors.xlsx' )
+    wb.save( '../TableCreation/ExcelFiles/Flavors.xlsx' )
         
 
 def main():
@@ -107,7 +107,7 @@ def main():
     flavors_ws = flavors_wb.active
     initialize_flavor_ws( flavors_ws )
     populate_flavor_ws( flavors_ws, flavors )
-    flavors_wb.save( './TableCreation/ExcelFiles/Flavors.xlsx' )
+    flavors_wb.save( '../TableCreation/ExcelFiles/Flavors.xlsx' )
     
     # populate worksheet for each food
     count = 1
