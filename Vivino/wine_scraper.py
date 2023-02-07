@@ -28,7 +28,35 @@ def find_page( url, t = 0.1 ):
     return driver.page_source
 
 
-''' Getting the list of wine anchors '''
+''' Get list of links, where each link redirects to the page for an individual wine '''
+def make_list_of_links():
+    # first: get list from file
+    # file will be read as string
+    file = open( './all_links.html' )
+    anchor_data = file.read()[ 1:-1 ]  # remove [] around file content
+    anchors = [ ]
+    index = anchor_data.find( '</a>, <a' )
+    while index != -1:
+        anchors.append( anchor_data[ anchor_data.find( '<a' ):index + 4 ] )
+        anchor_data = anchor_data[ index + 6: ]
+        index = anchor_data.find( '</a>, <a' )
+    
+    anchors.append( anchor_data )
+    
+    # now we have a list of anchors that we can parse
+    # get href from anchor
+    # Winery: div, class='wineInfoVintage__truncate--3QAtw'
+    # Wine: div, class='wineInfoVintage__vintage--VvWlU wineInfoVintage__truncate--3QAtw'
+    # Region: div, class='wineInfoLocation__regionAndCountry--1nEJz'
+    links = [ ]
+    for anchor in anchors:
+        anchor_soup = BeautifulSoup( anchor, 'html.parser' ).find( 'a' )
+        links.append( base_url + anchor_soup[ 'href' ] )
+        
+    return links
+
+
+''' Getting the list of wine anchors
 
 
 def make_list_of_wine_anchors():
@@ -107,10 +135,11 @@ def scroll_down( self ):
 def print_wine_list_percentage( all_links, number_of_wines ):
     print( "{:.2f}".format( 100 * len( all_links ) / number_of_wines ) + '%' + ' (' + str(
         len( all_links ) ) + '/' + str( number_of_wines ) + ')' )
+'''
 
 
 def main():
-    make_list_of_wine_anchors()
+    links = make_list_of_links()
 
 
 main()
