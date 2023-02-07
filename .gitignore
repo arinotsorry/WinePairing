@@ -18,3 +18,6 @@ main.py
 # excel files
 *SiteScraper/ExcelFiles/*
 
+..idea
+Database/flavors_database.txt
+*.txt
