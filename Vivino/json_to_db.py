@@ -130,11 +130,7 @@ def read_wine_json():
     return wines_as_json
 
 
-'''
-Prints lines to create tables in mysql server
-'''
-
-
+# Prints lines to create tables in mysql server
 def create_tables():
     wine_info = 'CREATE TABLE wine_info ('
     wine_info += 'id INT UNSIGNED NOT NULL, '
@@ -198,10 +194,31 @@ def create_tables():
 
 
 def add_to_general_table():
+    # id INT UNSIGNED NOT NULL
+    # id_without_vintage MEDIUMINT UNSIGNED
+    # wine VARCHAR(69), winery VARCHAR(51)
+    # type ENUM('Red wine', 'White wine', 'Sparkling wine', 'Dessert wine', 'Rosé wine', 'Fortified Wine')
+    # wine_description VARCHAR(1137)
+    # winery_description VARCHAR(3723)
+    # region VARCHAR(43)
+    # country VARCHAR(31)
+    # rating DECIMAL(2, 1)
+    # price DECIMAL(4, 2)
+    # image_link VARCHAR(59)
+    pass
+
+
+def add_to_grapes_table():
+    # id INT UNSIGNED NOT NULL
+    # grape VARCHAR(28)
     pass
 
 
 def add_to_traits_table():
+    # id INT UNSIGNED NOT NULL, style_description VARCHAR(1490), style_blurb VARCHAR(1490), alcohol_content DECIMAL(
+    # 4, 2), sweetness TINYINT, body TINYINT, body_description ENUM('Full-bodied', 'Very full-bodied',
+    # 'Medium-bodied', 'Light-bodied', 'Very light-bodied', 'None'), acidity TINYINT, acidity_description ENUM(
+    # 'High', 'Medium', 'Low', 'None'), oak TINYINT
     pass
 
 
