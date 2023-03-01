@@ -5,6 +5,7 @@ Author: Ari Wisenburn
 """
 
 import json
+import mysql.connector
 
 
 def find_max_value_of_everything_clunky( wines ):
@@ -130,7 +131,7 @@ def read_wine_json():
     return wines_as_json
 
 
-# Prints lines to create tables in mysql server
+# Prints lines to create tables in mysql server - I pasted these lines in the terminal for debugging, until I got it
 def create_tables():
     wine_info = 'CREATE TABLE wine_info ('
     wine_info += 'id INT UNSIGNED NOT NULL, '
@@ -193,22 +194,82 @@ def create_tables():
     print( notes )
 
 
-def add_to_general_table():
-    # id INT UNSIGNED NOT NULL
-    # id_without_vintage MEDIUMINT UNSIGNED
-    # wine VARCHAR(69), winery VARCHAR(51)
+"""
++-------------------+
+| Tables_in_wine_db |
++-------------------+
+| grapes            |
+| notes             |
+| suggested_foods   |
+| wine_info         |
+| wine_traits       |
++-------------------+
+"""
+
+
+def null( value ):
+    if value is None or value == '0' or value == 0 or value == '':
+        return True
+    return False
+
+
+def generate_value_statement( dictionary, value ):
+    return ("'" + str( dictionary[ value ] ) + "'") if (not null( dictionary[ value ] )) else 'NULL'
+
+
+def parse_description( text ):
+    # remove all breaks for human readability - they're always next to '\r's anyway, so we're preserving the newline
+    while '<br>' in text:
+        index = text.index( '<br>' )
+        new_text = text[ 0:index ] + text[ index + 4: ]
+        text = new_text
+    
+    # remove all backslashes
+    while '\\' in text:
+        index = text.index( '\\' )
+        new_text = text[ 0:index ]
+        if text[ index + 1 ] == 'n' or text[ index + 1 ] == 'r':
+            new_text += '\r\n'  # maybe change later depending on OS and how it prints - carriage return vs new line
+        else:
+            new_text += ' '
+        new_text += text[ index + 2: ]
+        text = new_text
+    print( "Formatted:\n", text )
+    return text
+
+
+def add_to_general_table( wine ):
+    info = wine[ 'general' ]
+    statement = 'INSERT INTO TABLE wine_info VALUES ('
+    # id INT UNSIGNED NOT NULL - we're not using generate_value_statement() here bc it can't be null
+    statement += str( info[ 'id' ] ) + ', '
+    # id_without_vintage MEDIUMINT UNSIGNED - no quotes around it, since it's an int
+    statement += (str( info[ 'id_without_vintage' ] ) if (not null( info[ 'id_without_vintage' ] )) else 'NULL') + ', '
+    # wine VARCHAR(69)
+    statement += generate_value_statement( info, 'wine' ) + ', '
+    # winery VARCHAR(51)
+    statement += generate_value_statement( info, 'winery' ) + ', '
     # type ENUM('Red wine', 'White wine', 'Sparkling wine', 'Dessert wine', 'Rosé wine', 'Fortified Wine')
+    statement += "'" + info[ 'type' ] + "', "  # never null
     # wine_description VARCHAR(1137)
+    statement += parse_description( generate_value_statement( info, 'wine_description' ) ) + ', '
     # winery_description VARCHAR(3723)
+    statement += parse_description( generate_value_statement( info, 'winery_description' ) ) + ', '
     # region VARCHAR(43)
+    statement += generate_value_statement( info, 'region' ) + ', '
     # country VARCHAR(31)
-    # rating DECIMAL(2, 1)
+    statement += generate_value_statement( info, 'country' ) + ', '
+    # rating DECIMAL(2, 1) - decimals cannot be null
+    statement += (str( info[ 'rating' ] ) + ', ') if (not null( info[ 'rating' ] )) else '0, '
     # price DECIMAL(4, 2)
+    statement += (str( info[ 'price' ] ) + ', ') if (not null( info[ 'price' ] )) else '0, '
     # image_link VARCHAR(59)
-    pass
+    statement += generate_value_statement( info, 'image_link' ) + ')'
+    print( "Statement:\n", statement )
 
 
-def add_to_grapes_table():
+def add_to_grapes_table( wine ):
+    for grape in wine[ ]
     # id INT UNSIGNED NOT NULL
     # grape VARCHAR(28)
     pass
@@ -223,8 +284,21 @@ def add_to_traits_table():
 
 
 def main():
+    # create mysql connector
+    wine_db = mysql.connector.connect(
+        host = 'localhost',
+        user = 'root',
+        password = '',
+        database = 'wine_db'
+    )
+    
+    # create cursor, to interact/send commands to wine db
+    cursor = wine_db.cursor( buffered = True )
+    
     wines = read_wine_json()
-    create_tables()
+    print( wines[ 0 ] )
+    for wine in wines:
+        add_to_general_table( wine )
 
 
 main()
