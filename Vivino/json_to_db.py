@@ -196,6 +196,8 @@ def create_tables():
     print( notes )
 
 
+# creating tables after thinking more about how to do the notes
+
 """
 +-------------------+
 | Tables_in_wine_db |
@@ -353,7 +355,7 @@ main()
 # winery: 51
 # wine_description: 1137
 # winery_description: 3723
-# grape_list: 9 (individual len max:
+# grape_list: 9 (individual len max: 23? 28? I forget)
 # region: 43
 # country: 31
 # rating: 4.6
