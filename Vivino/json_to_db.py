@@ -204,7 +204,7 @@ def create_tables():
 | notes             |
 | suggested_foods   |
 | ✓ wine_info       |
-| wine_traits       |
+| ✓ wine_traits     |
 +-------------------+
 """
 
