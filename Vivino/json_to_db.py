@@ -5,6 +5,7 @@ Author: Ari Wisenburn
 """
 
 import json
+
 import mysql.connector
 
 
@@ -198,10 +199,10 @@ def create_tables():
 +-------------------+
 | Tables_in_wine_db |
 +-------------------+
-| grapes            |
+| ✓ grapes          |
 | notes             |
 | suggested_foods   |
-| wine_info         |
+| ✓ wine_info       |
 | wine_traits       |
 +-------------------+
 """
@@ -239,6 +240,10 @@ def parse_description( text ):
 
 
 def add_to_general_table( wine ):
+    """
+    insert general wine info into wine_info table
+    """
+    
     info = wine[ 'general' ]
     statement = 'INSERT INTO TABLE wine_info VALUES ('
     # id INT UNSIGNED NOT NULL - we're not using generate_value_statement() here bc it can't be null
@@ -269,10 +274,14 @@ def add_to_general_table( wine ):
 
 
 def add_to_grapes_table( wine ):
-    for grape in wine[ ]
-    # id INT UNSIGNED NOT NULL
-    # grape VARCHAR(28)
-    pass
+    for grape in wine[ 'general' ][ 'grape_list' ]:
+        statement = 'INSERT INTO TABLE grapes VALUES ('
+        # id INT UNSIGNED NOT NULL
+        statement += str( wine[ 'general' ][ 'id' ] ) + ', '
+        # grape VARCHAR(28)
+        statement += "'" + grape + "')"
+        
+        print( statement )
 
 
 def add_to_traits_table():
@@ -299,6 +308,7 @@ def main():
     print( wines[ 0 ] )
     for wine in wines:
         add_to_general_table( wine )
+        add_to_grapes_table( wine )
 
 
 main()
