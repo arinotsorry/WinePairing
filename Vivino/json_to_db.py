@@ -6,7 +6,8 @@ Author: Ari Wisenburn
 
 import json
 
-import mysql.connector
+
+# import mysql.connector
 
 
 def find_max_value_of_everything_clunky( wines ):
@@ -209,7 +210,7 @@ def create_tables():
 
 
 def null( value ):
-    if value is None or value == '0' or value == 0 or value == '':
+    if value is None or value == '0' or value == 0 or value == '' or value == 'None' or value == 'None.':
         return True
     return False
 
@@ -230,12 +231,12 @@ def parse_description( text ):
         index = text.index( '\\' )
         new_text = text[ 0:index ]
         if text[ index + 1 ] == 'n' or text[ index + 1 ] == 'r':
-            new_text += '\r\n'  # maybe change later depending on OS and how it prints - carriage return vs new line
+            new_text += '\n'  # maybe change later depending on OS and how it prints - carriage return vs new line
         else:
             new_text += ' '
         new_text += text[ index + 2: ]
         text = new_text
-    print( "Formatted:\n", text )
+    # print( "Formatted:\n", text )
     return text
 
 
@@ -284,16 +285,45 @@ def add_to_grapes_table( wine ):
         print( statement )
 
 
-def add_to_traits_table():
-    # id INT UNSIGNED NOT NULL, style_description VARCHAR(1490), style_blurb VARCHAR(1490), alcohol_content DECIMAL(
-    # 4, 2), sweetness TINYINT, body TINYINT, body_description ENUM('Full-bodied', 'Very full-bodied',
-    # 'Medium-bodied', 'Light-bodied', 'Very light-bodied', 'None'), acidity TINYINT, acidity_description ENUM(
-    # 'High', 'Medium', 'Low', 'None'), oak TINYINT
+def add_to_traits_table( wine ):
+    info = wine[ 'traits' ]
+    statement = 'INSERT INTO TABLE wine_traits VALUES ('
+    # id INT UNSIGNED NOT NULL - we're not using generate_value_statement() here bc it can't be null
+    statement += str( wine[ 'general' ][ 'id' ] ) + ', '
+    # style_description VARCHAR(1490)
+    statement += parse_description( generate_value_statement( info, 'style_description' ) ) + ', '
+    # style_blurb VARCHAR(1490)
+    statement += parse_description( generate_value_statement( info, 'style_blurb' ) ) + ', '
+    # alcohol_content DECIMAL(4, 2)
+    statement += (str( info[ 'alcohol_content' ] ) + ', ') if (not null( info[ 'alcohol_content' ] )) else '0, '
+    # sweetness TINYINT
+    statement += (str( info[ 'sweetness' ] ) + ', ') if (not null( info[ 'sweetness' ] )) else '0, '
+    # body TINYINT
+    statement += (str( info[ 'body' ] ) + ', ') if (not null( info[ 'body' ] )) else '0, '
+    # body_description ENUM('Full-bodied', 'Very full-bodied', 'Medium-bodied', 'Light-bodied', 'Very light-bodied',
+    # 'None')
+    statement += ("'" + info[ 'body_description' ] + "', ") if not null( info[ 'body_description' ] ) else "'None'"
+    # acidity TINYINT
+    statement += (str( info[ 'acidity' ] ) + ', ') if (not null( info[ 'acidity' ] )) else '0, '
+    # acidity_description ENUM('High', 'Medium', 'Low', 'None')
+    statement += ("'" + info[ 'acidity_description' ] + "', ") if not null(
+        info[ 'acidity_description' ] ) else "'None'"
+    # oak TINYINT
+    statement += ((str( info[ 'oak' ] ) + ', ') if (not null( info[ 'oak' ] )) else '0') + ')'
+    print( statement )
+
+
+def add_to_notes_table():
+    pass
+
+
+def add_to_suggested_foods_table():
     pass
 
 
 def main():
     # create mysql connector
+    """
     wine_db = mysql.connector.connect(
         host = 'localhost',
         user = 'root',
@@ -301,14 +331,16 @@ def main():
         database = 'wine_db'
     )
     
+    
     # create cursor, to interact/send commands to wine db
     cursor = wine_db.cursor( buffered = True )
-    
+    """
     wines = read_wine_json()
     print( wines[ 0 ] )
     for wine in wines:
         add_to_general_table( wine )
         add_to_grapes_table( wine )
+        add_to_traits_table( wine )
 
 
 main()
