@@ -27,7 +27,7 @@ def create_flavor_table( flavors_cursor ):
 
 
 def interpret_flavors_csv():
-    file = open( '../TableCreation/CsvFiles/Flavors.csv', 'r' )
+    file = open( '../../TableCreation/CsvFiles/Flavors.csv', 'r' )
     file_lines = file.readlines()
     file_names = [ ]
     
@@ -145,7 +145,7 @@ def populate_food_table( flavors_cursor, food, file_name ):
     ]
     
     # create list of statements
-    statements = []
+    statements = [ ]
     for line in lines[ 1: ]:
         # rank, <cocktail>, <cocktail_category>, <savory>, ..., <sweet_category>
         statement = 'INSERT INTO ' + food + ' VALUES ( '
@@ -155,7 +155,7 @@ def populate_food_table( flavors_cursor, food, file_name ):
             statement += ', ' + ('\'' + make_safe( value ) + '\'' if value != '' else 'NULL')
         statement += ' )'
         
-        statements.append(statement)
+        statements.append( statement )
     
     return statements
 
@@ -177,11 +177,11 @@ def drop_all_tables( flavors_cursor ):
     
     statements = [ ]
     for table in flavors_cursor:
-        if table[0] != 'flavors':
-            statements.append( 'DROP TABLE ' + str(table[0]) )
+        if table[ 0 ] != 'flavors':
+            statements.append( 'DROP TABLE ' + str( table[ 0 ] ) )
     
     for statement in statements:
-        print(statement)
+        print( statement )
         flavors_cursor.execute( statement )
 
 

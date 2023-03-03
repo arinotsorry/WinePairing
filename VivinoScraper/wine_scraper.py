@@ -3,19 +3,12 @@ Author: Ari Wisenburn
 Date: Feb 06, 2023
 '''
 
-from pydub import AudioSegment
-from pydub.playback import play
-
-import requests
-import time
 import json
+import time
 
 from bs4 import BeautifulSoup  # can only use for static page scraping of DOMs.
-
 # This is a dynamic site, so we need some way to execute JS:
 from selenium import webdriver
-from selenium.webdriver.common.by import By
-from selenium.webdriver.common.keys import Keys
 
 # constants
 URL = 'https://www.vivino.com/explore?e' \
@@ -56,7 +49,7 @@ def get_wines( links ):
             print( "Couldn't find wine page :(" )
     
     # remove the last comma in the json file
-    with open( './wines.json', 'rb+' ) as file:
+    with open( '../Database/Wine/wines.json', 'rb+' ) as file:
         file.seek( -2, 2 )  # the second 2 represents enum value for setting the reference point at end of the file
         file.truncate()
 
@@ -160,7 +153,7 @@ def interpret_wine_page( wine_soup, count, length, notes, start ):
         print( "{:.2f}".format( 100 * count / length ) + '% | ' + time_str + wine_json[ 'general' ][ 'winery' ] + ', ' +
                wine_json[ 'general' ][ 'wine' ] )
         
-        write_json_file = open( './wines.json', 'a' )
+        write_json_file = open( '../Database/Wine/wines.json', 'a' )
         json.dump( wine_json, write_json_file, indent = 2 )
         write_json_file.write( ',\n' )
         write_json_file.close()
@@ -329,7 +322,7 @@ def print_wine_list_percentage( all_links, number_of_wines ):
 
 
 def main():
-    write_json_file = open( './wines.json', 'w' )
+    write_json_file = open( '../Database/Wine/wines.json', 'w' )
     write_json_file.close()
     
     links = make_list_of_links()
