@@ -6,7 +6,6 @@ Author: Ari Wisenburn
 import getopt
 import json
 import sys
-import time
 
 import mysql.connector
 
@@ -47,6 +46,23 @@ def read_wine_json():
     return wines_as_json
 
 
+# drop already-instantiated tables if you're retrying to create/populate tables in one shot
+def drop_tables( cursor ):
+    cursor.execute( 'SHOW TABLES' )
+    tables = cursor.fetchall()  # unprocessed SQL output
+    tables = [ table[ 0 ] for table in tables ]
+    
+    # we have to delete the FK tables first
+    for table in tables:
+        if table != 'wine_info' and table != 'note_categories':
+            cursor.execute( 'DROP TABLE ' + table )
+            tables.remove( table )
+    
+    # now we can delete the PK tables - loop has max 2 elements, so it's technically inefficient but whatever
+    for table in tables:
+        cursor.execute( 'DROP TABLE ' + table )
+
+
 def main( argv ):
     """
     :param argv: -h host -u user -p password -d database, all optional
@@ -78,9 +94,13 @@ def main( argv ):
         database = database
     )
     
-    # drop all tables
+    # create mysql cursor
+    wine_db.start_transaction( isolation_level = 'READ COMMITTED' )
     cursor = wine_db.cursor( buffered = True )
-    cursor.execute( 'drop table wine_info, note_categories, wine_traits, grapes, suggested_food_pairings, notes' )
+    
+    # drop necessary tables (if there are any)
+    drop_tables( cursor )
+    # cursor.execute( 'drop table wine_info, note_categories, wine_traits, grapes, suggested_food_pairings, notes' )
     
     # read wines from json
     wines = read_wine_json()
@@ -89,9 +109,13 @@ def main( argv ):
     create_tables( wine_db )
     
     # populate tables with wine info
+    count = 0
     for wine in wines:
-        populate_tables( wine_db, wine )
-        time.sleep( 0.5 )  # this is stupid if it works
+        print( 'Now processing wine ' + str( count ) + ' / ' + str( len( wines ) ) )
+        populate_tables( wine_db, wine, cursor )
+        count += 1
+    
+    print( 'Done! :)' )
 
 
 main( sys.argv )
