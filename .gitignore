@@ -23,3 +23,4 @@ Database/flavors_database.txt
 *.txt
 *.html
 SiteScraper/TableCreation/CsvFiles
+Database/Wine/sql_shenanigans.py
