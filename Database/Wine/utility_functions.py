@@ -1,13 +1,16 @@
 """
-This only works for the wines.json file, not for general json-to-db conversion purposes
-
-Author: Ari Wisenburn
+A kind-of-disconjoint list of utility functions I sometimes use/need on a case-by-case basis. Mostly documentation.
 """
 
-import json
 
-
+# find max space each wine attribute takes up for table generation
 def find_max_value_of_everything_clunky( wines ):
+    """
+    Brute force, print maximum values stored in each wine's attribute.
+    Helps me know how much space to allocate in each table's column
+    :param wines: List of JSON wine objects
+    :return: nothing, prints max size of various wine JSON attributes
+    """
     values = [ 0 ] * 22
     for wine in wines:
         # id
@@ -111,124 +114,9 @@ def find_max_value_of_everything_clunky( wines ):
     print( values )
 
 
-def read_wine_json():
-    path = './wines.json'
-    file = open( path, 'r' )
-    content = file.read()
-    separator = '},\n{'
-    
-    wines_as_json = [ ]
-    
-    while separator in content:
-        index = content.index( separator )
-        
-        # the index is where the string starts, but we want to separate at the ',\n' and remove that.
-        wines_as_json.append( json.loads( content[ 0: index + 1 ] ) )
-        content = content[ index + 3: ]
-    
-    wines_as_json.append( json.loads( content ) )
-    return wines_as_json
-
-
-# Prints lines to create tables in mysql server
-def create_tables():
-    wine_info = 'CREATE TABLE wine_info ('
-    wine_info += 'id INT UNSIGNED NOT NULL, '
-    wine_info += 'id_without_vintage MEDIUMINT UNSIGNED, '
-    wine_info += 'wine VARCHAR(69), '
-    wine_info += 'winery VARCHAR(51), '
-    
-    wine_info += "type ENUM('Red wine', 'White wine', 'Sparkling wine', 'Dessert wine', 'Rosé wine', 'Fortified "
-    wine_info += "Wine'), "
-    
-    wine_info += 'wine_description VARCHAR(1137), '
-    wine_info += 'winery_description VARCHAR(3723), '
-    wine_info += 'region VARCHAR(43), '
-    wine_info += 'country VARCHAR(31), '
-    wine_info += 'rating DECIMAL(2, 1), '
-    wine_info += 'price DECIMAL(4, 2), '
-    wine_info += 'image_link VARCHAR(59), '
-    wine_info += 'PRIMARY KEY (id)'
-    wine_info += ')'
-    
-    print( wine_info )
-    
-    grapes_table = 'CREATE TABLE grapes ('
-    grapes_table += 'id INT UNSIGNED NOT NULL, '
-    grapes_table += 'grape VARCHAR(28), '
-    grapes_table += 'FOREIGN KEY (id) REFERENCES wine_info(id))'
-    
-    print( grapes_table )
-    
-    wine_traits = 'CREATE TABLE wine_traits ('
-    wine_traits += 'id INT UNSIGNED NOT NULL, '
-    wine_traits += 'style_description VARCHAR(1490), '
-    wine_traits += 'style_blurb VARCHAR(1490), '
-    wine_traits += 'alcohol_content DECIMAL(4, 2), '
-    wine_traits += 'sweetness TINYINT, '
-    wine_traits += 'body TINYINT, '
-    wine_traits += "body_description ENUM('Full-bodied', 'Very full-bodied', 'Medium-bodied', 'Light-bodied', " \
-                   "'Very light-bodied', 'None'), "
-    wine_traits += 'acidity TINYINT, '
-    wine_traits += "acidity_description ENUM('High', 'Medium', 'Low', 'None'), "
-    wine_traits += 'oak TINYINT, '
-    wine_traits += 'FOREIGN KEY (id) REFERENCES wine_info(id))'
-    
-    print( wine_traits )
-    
-    suggested_foods = 'CREATE TABLE suggested_foods ('
-    suggested_foods += 'id INT UNSIGNED NOT NULL, '
-    suggested_foods += 'food VARCHAR(28), '
-    suggested_foods += 'FOREIGN KEY (id) REFERENCES wine_info(id))'
-    
-    print( suggested_foods )
-    
-    notes = 'CREATE TABLE notes ( '
-    notes += 'id INT UNSIGNED NOT NULL, '
-    notes += 'note VARCHAR(23), '  # TODO: change after comma-separation
-    notes += 'category VARCHAR(11), '
-    notes += 'line TINYINT UNSIGNED, '
-    notes += 'FOREIGN KEY (id) REFERENCES wine_info(id))'
-    
-    print( notes )
-
-
-def add_to_general_table():
-    # id INT UNSIGNED NOT NULL
-    # id_without_vintage MEDIUMINT UNSIGNED
-    # wine VARCHAR(69), winery VARCHAR(51)
-    # type ENUM('Red wine', 'White wine', 'Sparkling wine', 'Dessert wine', 'Rosé wine', 'Fortified Wine')
-    # wine_description VARCHAR(1137)
-    # winery_description VARCHAR(3723)
-    # region VARCHAR(43)
-    # country VARCHAR(31)
-    # rating DECIMAL(2, 1)
-    # price DECIMAL(4, 2)
-    # image_link VARCHAR(59)
-    pass
-
-
-def add_to_grapes_table():
-    # id INT UNSIGNED NOT NULL
-    # grape VARCHAR(28)
-    pass
-
-
-def add_to_traits_table():
-    # id INT UNSIGNED NOT NULL, style_description VARCHAR(1490), style_blurb VARCHAR(1490), alcohol_content DECIMAL(
-    # 4, 2), sweetness TINYINT, body TINYINT, body_description ENUM('Full-bodied', 'Very full-bodied',
-    # 'Medium-bodied', 'Light-bodied', 'Very light-bodied', 'None'), acidity TINYINT, acidity_description ENUM(
-    # 'High', 'Medium', 'Low', 'None'), oak TINYINT
-    pass
-
-
-def main():
-    wines = read_wine_json()
-    create_tables()
-
-
-main()
-
+"""
+Max values for everything:
+"""
 # num of wines: 9238
 # Max value/length for:
 # id: 172831218
@@ -237,7 +125,7 @@ main()
 # winery: 51
 # wine_description: 1137
 # winery_description: 3723
-# grape_list: 9 (individual len max:
+# grape_list: 9 (individual len max: 23? 28? I forget)
 # region: 43
 # country: 31
 # rating: 4.6
