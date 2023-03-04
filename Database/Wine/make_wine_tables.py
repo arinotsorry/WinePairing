@@ -3,9 +3,7 @@ This only works for the wines.json file, not for general json-to-db conversion p
 
 Author: Ari Wisenburn
 """
-import getopt
 import json
-import sys
 
 import mysql.connector
 
@@ -28,7 +26,7 @@ def read_wine_json():
     Reads the scraped wine information stored in the json file and converts it to a usable JSON object we can use later
     :return: a list of all the wines, each as a JSON object
     """
-    path = 'wines.json'
+    path = 'Wine/wines.json'
     file = open( path, 'r' )
     content = file.read()
     separator = '},\n{'
@@ -63,28 +61,14 @@ def drop_tables( cursor ):
         cursor.execute( 'DROP TABLE ' + table )
 
 
-def main( argv ):
+def make_wine_tables( db_info ):
     """
-    :param argv: -h host -u user -p password -d database, all optional
+    :param db_info: -h host -u user -p password -w wine_database name, all optional
     :return: nothing, created and populated tables in your MySQL server
     """
-    # initialize default database connection values
-    host = 'localhost'
-    user = 'root'
-    password = ''
-    database = 'wine_db'
     
-    # handle arguments
-    opts, args = getopt.getopt( argv, "h:u:p:d:", [ 'host', 'user', 'password', 'database' ] )
-    for opt, arg in opts:
-        if opt in ('-h', '--host'):
-            host = arg
-        elif opt in ('-u', '--user'):
-            user = arg
-        elif opt in ('-p', '--password'):
-            password = arg
-        elif opt in ('-d', '--database'):
-            database = arg
+    # initialize default database connection values
+    host, user, password, database = db_info
     
     # create mysql connector
     wine_db = mysql.connector.connect(
@@ -106,16 +90,13 @@ def main( argv ):
     wines = read_wine_json()
     
     # create tables
+    print( 'Creating wine tables...' )
     create_tables( wine_db )
     
     # populate tables with wine info
-    count = 0
+    count = 1
     for wine in wines:
-        print( 'Now processing wine ' + str( count ) + ' / ' + str( len( wines ) ) )
+        if count % 20 == 0 or count == 1 or count == len( wines ):
+            print( 'Now processing wine ' + str( count ) + ' / ' + str( len( wines ) ) )
         populate_tables( wine_db, wine, cursor )
         count += 1
-    
-    print( 'Done! :)' )
-
-
-main( sys.argv )

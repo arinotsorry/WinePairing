@@ -1,33 +1,9 @@
-import getopt
 import json
-import sys
 
 import mysql.connector
 
-from create_tables import create_tables
-from populate_tables import populate_tables
-
-
-def handle_arguments( argv ):
-    # initialize default database connection values
-    host = 'localhost'
-    user = 'root'
-    password = ''
-    database = 'flavor_db'
-    
-    # handle arguments
-    opts, args = getopt.getopt( argv, "h:u:p:d:", [ 'host', 'user', 'password', 'database' ] )
-    for opt, arg in opts:
-        if opt in ('-h', '--host'):
-            host = arg
-        elif opt in ('-u', '--user'):
-            user = arg
-        elif opt in ('-p', '--password'):
-            password = arg
-        elif opt in ('-d', '--database'):
-            database = arg
-    
-    return host, user, password, database
+from Database.Flavor.create_tables import create_tables
+from Database.Flavor.populate_tables import populate_tables
 
 
 def drop_tables( cursor ):
@@ -54,16 +30,16 @@ def read_json():
     Reads the scraped wine information stored in the json file and converts it to a usable JSON object we can use later
     :return: a list of all the wines, each as a JSON object
     """
-    path = 'foods.json'
+    path = 'Flavor/foods.json'
     file = open( path, 'r' )
     content = file.read()
     
     return json.loads( content )
 
 
-def main( argv ):
+def make_flavor_tables( db_info ):
     # assign arguments to database information
-    host, user, password, database = handle_arguments( argv )
+    host, user, password, database = db_info
     
     # create mysql connector
     flavor_db = mysql.connector.connect(
@@ -81,6 +57,7 @@ def main( argv ):
     drop_tables( cursor )
     
     # create tables
+    print( 'Creating flavor tables...' )
     create_tables( cursor )
     
     # read in json with food and flavor data
@@ -90,6 +67,3 @@ def main( argv ):
     populate_tables( foods_json, cursor )
     
     flavor_db.commit()
-
-
-main( sys.argv )

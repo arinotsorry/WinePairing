@@ -2,7 +2,7 @@
 
 `wines.json` is populated with wine information scraped off Vivino.
 <br />
-`make_wine_tables.py` is what you run to make the wine tables. It uses:
+`make_wine_tables.py` is what the outer `create_databases.py ` function runs to create the wine tables. It uses:
 
 - `create_tables.py` to create the wine tables
 - `populate_tables.py` to process the wine json data and insert it into the tables
@@ -33,14 +33,3 @@ This works by
   database ([you have to set this up yourself beforehand, sorry :/](https://dev.mysql.com/doc/mysql-getting-started/en/))
 - processing the json data so it is formatted correctly for calls to the database
 - populating the wine tables with data
-
-#### Input arguments:
-
-all of these are optional and have default values as listed below:
-
-- -h, --hostname, default 'localhost'
-- -u, --user, default 'root'
-- -p, --password, default ''
-- -d, --database, default 'wine_db'
-
-
