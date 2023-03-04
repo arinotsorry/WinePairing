@@ -5,6 +5,7 @@ import sys
 import mysql.connector
 
 from create_tables import create_tables
+from populate_tables import populate_tables
 
 
 def handle_arguments( argv ):
@@ -34,17 +35,17 @@ def drop_tables( cursor ):
     tables = cursor.fetchall()  # unprocessed SQL output
     tables = [ table[ 0 ] for table in tables ]
     
-    """
     # we have to delete the FK tables first
-    for table in tables:
-        if table != 'wine_info' and table != 'note_categories':
-            cursor.execute( 'DROP TABLE ' + table )
-            tables.remove( table )
-    """
+    if 'cocktail' in tables:
+        cursor.execute( 'DROP TABLE cocktail' )
+    if 'savory' in tables:
+        cursor.execute( 'DROP TABLE savory' )
+    if 'sweet' in tables:
+        cursor.execute( 'DROP TABLE sweet' )
     
-    # now we can delete the PK tables - loop has max 2 elements, so it's technically inefficient but whatever
-    for table in tables:
-        cursor.execute( 'DROP TABLE ' + table )
+    # next drop PK table
+    if 'flavors' in tables:
+        cursor.execute( 'DROP TABLE flavors' )
 
 
 # Read in wine JSON information and convert it to a usable JSON
@@ -83,7 +84,12 @@ def main( argv ):
     create_tables( cursor )
     
     # read in json with food and flavor data
-    food_json = read_json()
+    foods_json = read_json()
+    
+    # populate the tables with that data
+    populate_tables( foods_json, cursor )
+    
+    flavor_db.commit()
 
 
 main( sys.argv )
