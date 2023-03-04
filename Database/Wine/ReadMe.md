@@ -11,6 +11,10 @@
 `utility_functions.py` is just storage for functions I used once to gather data or other handy utility functions. Feel
 free to ignore.
 
+### Schema
+
+![img.png](schema.png)
+
 ### But first...
 
 Before you begin, you have to

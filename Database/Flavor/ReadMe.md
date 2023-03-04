@@ -11,6 +11,10 @@
 `csv_to_json.py` is just me reading from the csv files I created and dumping that info into the `foods.json` file. It
 was a one-time use file.
 
+### Schema
+
+![img.png](schema.png)
+
 ### But first...
 
 Before you begin, you have to
