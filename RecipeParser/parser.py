@@ -3,13 +3,12 @@ Lazy parser for recipes.
 Uses Natural Language Tool Kit
 Ideally want to use BERT and some language things one day, but not right now
 """
-import nltk
-from nltk.corpus import stopwords
-from nltk.tokenize import word_tokenize
-from nltk.stem import WordNetLemmatizer
 import json
 import os
-from os import listdir
+
+import nltk
+from nltk.corpus import stopwords
+from nltk.stem import WordNetLemmatizer
 
 WORDNET_TAGS = {  # 'n, s, a, r, v'
     "NN" : 'n',
@@ -67,7 +66,7 @@ print( nltk.help )
 def main():
     words = { }
     file = open( '../Recipes/Grilled Salmon.txt', 'r' )
-    recipes = os.listdir( '../Recipes/' )
+    recipes = os.listdir( '../Recipes/' )  # get list of text recipes
     
     for recipe in recipes:
         file = open( '../Recipes/' + recipe, 'r' )
