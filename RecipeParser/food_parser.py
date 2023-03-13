@@ -67,7 +67,18 @@ def get_recipe_lines():
 
 
 def process_ingredients( food_lines, cursor ):
-    pass
+    for line in food_lines:
+        print( line[ 0 ] )
+        cursor.execute( "SELECT category FROM flavors WHERE food = '" + line[ 0 ] + "'" )
+        results = cursor.fetchall()
+        print( results )
+        print()
+    
+    cursor.execute( "SELECT DISTINCT category FROM flavors" )
+    # alcohols, sugars, spices, nut, meats, fruits, vinegars, vegetables, herbs, other, beverages, berries, cheeses,
+    # dairy,
+    # seeds, liquers, condiments, candy, oils
+    print( cursor.fetchall() )
 
 
 def main():
